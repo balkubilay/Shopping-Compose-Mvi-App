@@ -75,15 +75,11 @@ dependencies {
     //Room
     implementation("androidx.room:room-runtime:2.5.2")
     ksp("androidx.room:room-compiler:2.5.2")
-    //Coroutine
     implementation("androidx.room:room-ktx:2.5.2")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     //Hilt
     implementation("com.google.dagger:hilt-android:2.46.1")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
     kapt("com.google.dagger:hilt-android-compiler:2.44")
-    //Hilt Navigation Compose
-    implementation("androidx.hilt:hilt-navigation-fragment:1.0.0")
     //Gson
     implementation("com.google.code.gson:gson:2.9.0")
     //Coil

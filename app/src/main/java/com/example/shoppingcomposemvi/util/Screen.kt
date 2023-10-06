@@ -1,9 +1,10 @@
 package com.example.shoppingcomposemvi.util
 
 sealed class Screen(val route: String) {
-    object Home : Screen("main")
+    object Splash : Screen("splashScreen")
+    object Home : Screen("homeScreen")
     object Basket : Screen("basketScreen")
     object Transactions : Screen("transactionsScreen")
     object Payment : Screen("paymentScreen")
-    object PaymentResult : Screen("paymentResult")
+    object PaymentResult : Screen("paymentResultScreen")
 }

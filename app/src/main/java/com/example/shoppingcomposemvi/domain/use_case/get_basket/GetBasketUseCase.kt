@@ -65,7 +65,6 @@ class GetBasketUseCase @Inject constructor(
         productId: Int,
         newProductCount: Int
     ): Flow<Resource<Basket>> = flow {
-        emit(Resource.Loading())
         try {
             localRepository.updateProductCountInRoom(productId, newProductCount)
 

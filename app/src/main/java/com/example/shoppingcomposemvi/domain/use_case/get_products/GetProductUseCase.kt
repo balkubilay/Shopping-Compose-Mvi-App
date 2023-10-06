@@ -73,7 +73,6 @@ class GetProductUseCase @Inject constructor(
 
     fun executeUpdateAndGetProduct(productId: Int, newProductCount: Int): Flow<Resource<Product>> =
         flow {
-            emit(Resource.Loading())
             try {
                 localRepository.updateProductCountInRoom(productId, newProductCount)
 

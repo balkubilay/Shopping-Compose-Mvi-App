@@ -38,7 +38,8 @@ class MainActivity : ComponentActivity() {
 fun NavGraph() {
     val navController = rememberNavController()
 
-    NavHost(navController = navController, startDestination = Screen.Home.route) {
+    NavHost(navController = navController, startDestination = Screen.Splash.route) {
+        composable(Screen.Splash.route) { SplashScreen(navController)}
         composable(Screen.Home.route) { MainScreen(navController) }
         composable(Screen.Basket.route) { BasketScreen(navController) }
         composable(Screen.PaymentResult.route) {
